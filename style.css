@@ -46,6 +46,11 @@ h2 {
 	margin: .25em auto;
 }
 
+h6 img {
+	position:relative;
+	top: .5em;
+}
+
 ul {
 	width: 30%;
 	display: flex;
@@ -53,9 +58,15 @@ ul {
 	justify-content: flex-start;;
 	align-items: flex-start;
 	padding: 0;
+	position: relative;
 }
 
-li span {
+li img {
+	position: relative;
+	top: 5px;
+}
+
+li div {
 	visibility: collapse;
 }
 
@@ -110,6 +121,10 @@ li span {
 .logo {
 	border-radius: 100%;
 	margin: 0 .5em;
+}
+
+.logo:hover {
+	border: .25em solid #F98948;
 }
 
 .small {
@@ -200,10 +215,14 @@ li span {
 		margin: 0 .5em 1em 0;
 	}
 
-	li span {
+	li div {
 		visibility: visible;
-		margin-bottom: 1em;
+		display: inline-block;
 	}
+
+.nav-label {
+	margin-left: 1em;
+}
 
 	ul {
 		width: 50%;
